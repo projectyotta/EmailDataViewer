@@ -1,0 +1,52 @@
+﻿@model arihant.Models.mail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>mail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sentemailid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sentemailid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.recemailid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recemailid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.senttime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.senttime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rectime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rectime)
+        </dd>
+        
+       
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
